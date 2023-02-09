@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header,
+nav,
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 1em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 2em;
+}
+
+section {
+    width: 80%;
+    padding: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    width: 20%;
+    margin: 1em;
+    text-align: left;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+table.designated-parking-lot {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+table.designated-parking-lot th,
+table.designated-parking-lot td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+table.designated-parking-lot th {
+    background-color: lightblue;
+}
+
+.step {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid black;
+    width: 1000px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+.step ul {
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+.step li::before {
+    content: "\f067";
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+form {
+    width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 1em;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+input[type="cardNo"],
+input[type="expiration date"],
+input[type="cvc"] {
+    width: 50%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    padding: 0.5em;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    background-color: lightblue;
+    color: white;
+    cursor: pointer;
+}
+
+/* Keyframes

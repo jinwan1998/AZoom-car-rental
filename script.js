@@ -58,3 +58,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+document.getElementById("payment-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    const days = document.getElementById("days").value;
+    const total = document.getElementById("total").value;
+    const cardNumber = document.getElementById("card-number").value;
+    const expDate = document.getElementById("exp-date").value;
+    const cvc = document.getElementById("cvc").value;
+  
+    if (confirm(`Are you sure that the information you entered is correct?\nNumber of Days: ${days}\nTotal: ${total}\nCredit Card Number: ${cardNumber}\nExpiration Date: ${expDate}\nCVC: ${cvc}`)) {
+      // Submit the form
+    }
+  });
+  
